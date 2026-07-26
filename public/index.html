@@ -1,0 +1,43 @@
+<!-- public/index.html -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scratch OJ 测试平台</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1>Scratch OJ 测试平台</h1>
+    <h2>输入测试用例（JSON）：</h2>
+    <textarea id="casesInput">
+[{"input":{"a":373213099,"b":645933766},"output":{"c":1019146865}},{"input":{"a":908065107,"b":922821926},"output":{"c":1830887033}},{"input":{"a":737056777,"b":450841551},"output":{"c":1187898328}},{"input":{"a":91716413,"b":726970839},"output":{"c":818687252}},{"input":{"a":669228367,"b":299419844},"output":{"c":968648211}},{"input":{"a":80086555,"b":347787116},"output":{"c":427873671}},{"input":{"a":304902451,"b":176872735},"output":{"c":481775186}},{"input":{"a":725942019,"b":458054350},"output":{"c":1183996369}},{"input":{"a":627755905,"b":303055225},"output":{"c":930811130}},{"input":{"a":347571140,"b":491179219},"output":{"c":838750359}},{"input":{"a":117476496,"b":456926696},"output":{"c":574403192}},{"input":{"a":76717022,"b":556526260},"output":{"c":633243282}},{"input":{"a":557550472,"b":633695723},"output":{"c":1191246195}},{"input":{"a":233730020,"b":622624690},"output":{"c":856354710}},{"input":{"a":882702204,"b":544048440},"output":{"c":1426750644}},{"input":{"a":932882595,"b":168403143},"output":{"c":1101285738}},{"input":{"a":861068411,"b":486312936},"output":{"c":1347381347}},{"input":{"a":265340222,"b":352137124},"output":{"c":617477346}},{"input":{"a":653586906,"b":578891074},"output":{"c":1232477980}},{"input":{"a":274396843,"b":485724995},"output":{"c":760121838}}]</textarea
+    >
+    <h2>说明：</h2>
+    <div>
+      类似于 a+b problem。将 a 和
+      b（0≤a,b≤10^9）两个整数变量相加，并将结果保存在c中。
+    </div>
+    <h2>提交答案：</h2>
+    <label>
+      上传项目文件（.sb3）：
+      <input type="file" id="projectFile" accept=".sb3" />
+    </label>
+    <br />
+    <button id="runBtn">运行测试</button>
+    <div id="results">
+      <h3>运行结果</h3>
+      <p id="summary"></p>
+      <table id="resultTable">
+        <thead>
+          <tr>
+            <th>用例 #</th>
+            <th>状态</th>
+            <th>耗时 (ms)</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

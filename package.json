@@ -1,0 +1,13 @@
+{
+  "name": "scratch-oj",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "multer": "^2.2.0",
+    "scratch-vm": "^5.0.300"
+  }
+}
