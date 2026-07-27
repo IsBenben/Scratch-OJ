@@ -1,8 +1,15 @@
 body {
-  font-family: sans-serif;
-  padding: 20px;
   font-family: Consolas, 'Courier New', Courier, sans-serif;
+  padding: 20px;
+  background: #fafafa;
 }
+
+header {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
 textarea {
   width: 100%;
   height: 200px;
@@ -12,14 +19,24 @@ button {
   padding: 10px 20px;
   font: inherit;
   background: #f0f0f0;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+button:hover {
+  background: #e0e0e0;
+}
+a {
+  text-decoration: none;
+  color: #0366d6;
+}
+a:hover {
+  text-decoration: underline;
 }
 
-#results {
-  margin-top: 20px;
-}
 table {
   border-collapse: collapse;
   width: 100%;
+  margin-top: 10px;
 }
 th,
 td {
@@ -31,12 +48,38 @@ th {
   background: #f0f0f0;
 }
 
+.view {
+  display: none;
+}
+.view.active {
+  display: block;
+}
+
 .accepted {
   color: green;
+  font-weight: bold;
 }
 .wrong {
   color: red;
+  font-weight: bold;
 }
 .tle {
   color: orange;
+  font-weight: bold;
+}
+
+#submitForm {
+  margin: 20px 0;
+}
+#submitForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+#submitForm button {
+  background: #28a745;
+  color: white;
+  border: none;
+}
+#submitForm button:hover {
+  background: #218838;
 }
